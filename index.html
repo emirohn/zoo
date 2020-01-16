@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="zoo.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href = "stylesheet.css" >
+
+    <meta charset="UTF-8">
+</head>
+<body onLoad="run()">
+
+<img id="zooWord" src="images/wordZoo.png">
+
+<table id="animalUpdates">
+    <tr>
+        <th id="updatesText" class="w3-xlarge"> Animal updates </th>
+    </tr>
+    <tr>
+        <th id="animalUpdatesText"></th>
+    </tr>
+</table>
+
+<table id="animalsList">
+    <tr>
+        <td id="animalsListName" class="w3-xlarge"> List of animals</td>
+    </tr>
+    <tr>
+        <td id="listOfAnimals"> </td>
+    </tr>
+</table>
+
+<table id="createAnimals">
+    <tr>
+        <td id="tableTitle" class="w3-xlarge">
+            Create a new animal:
+        </td>
+    </tr>
+    <tr>
+        <td> Name: <input id="name" type="text" name="fname"> </td> </tr>
+    <tr>
+        <td>
+            Type of animal: <select id="animalType">
+            <option value="tiger">Tiger</option>
+            <option value="bear">Bear</option>
+            <option value="giraffe">Giraffe</option>
+            <option value="unicorn">Unicorn</option>
+            <option value="bee">Bee</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Favorite food: <select id="favoriteFood">
+            <option value="pizza">Pizza</option>
+            <option value="fish">Fish</option>
+            <option value="steak">Steak</option>
+            <option value="pollen">Pollen</option>
+            <option value="marshmallows">Marshmallows</option>
+            <option value="leaves">Leaves</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="createNew" class="w3-button w3-teal  w3-round-large  w3-ripple" onClick="createAnimal()" type="button"> Create new animal! </button>
+        </td>
+    </tr>
+</table>
+
+<table id="feedAnimals">
+    <tr>
+        <td id="tableTitleFood" class="w3-xlarge" >
+            Feed the animals:
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Select food: <select id="selectFood">
+            <option value="pizza">Pizza</option>
+            <option value="fish">Fish</option>
+            <option value="steak">Steak</option>
+            <option value="pollen">Pollen</option>
+            <option value="marshmallows">Marshmallows</option>
+            <option value="leaves">Leaves</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="selectFoodButton"  onclick="feedAnimals()" class="w3-button w3-teal w3-round-large w3-ripple" type="button"> Feed! </button>
+        </td>
+    </tr>
+</table>
+
+<table id="renameAnimals">
+    <tr>
+        <td id="titleRename"  class="w3-xlarge">
+            Rename your animal:
+        </td>
+    </tr>
+    <tr>
+        <td  id="nameRow">
+            <input id="oldName" value = "Old name" type="text" name="fname">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="newName" value = "New name" type="text" name="fname">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="renameButton" onclick="renameAnimal()" class="w3-button w3-teal w3-round-large w3-ripple" type="button"> Rename! </button>
+        </td>
+    </tr>
+</table>
+
+<table id="removeAnimals">
+    <tr>
+        <td id="titleRemove"  class="w3-xlarge">
+            Remove an animal:
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="removeName" value = "Name" type="text" name="fname">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="removeButton" onclick="removeAnimal()" class="w3-button w3-teal w3-round-large w3-ripple" type="button"> Remove </button>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

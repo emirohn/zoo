@@ -1,0 +1,95 @@
+body {
+    background-image:url("images/backdrop.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 17px;
+}
+
+#zooWord{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#animalUpdates{
+    position: fixed;
+    right: 425px;
+    top: 250px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    width: 450px;
+}
+
+#animalsList{
+    position: fixed;
+    right: 100px;
+    top: 250px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    width: 250px;
+}
+
+#createAnimals{
+    position: fixed;
+    left: 100px;
+    top: 250px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    width: 350px;
+    height: 300px;
+}
+
+#feedAnimals{
+    position: fixed;
+    left: 475px;
+    top: 250px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    width: 300px;
+    height: 300px;
+}
+
+#removeAnimals{
+    position: fixed;
+    left: 475px;
+    top: 575px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    width: 300px;
+    height: 250px;
+}
+
+#renameAnimals{
+    position: fixed;
+    left: 100px;
+    top: 575px;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: black;
+    width: 350px;
+    height: 250px;
+}
+
+tr,td{
+    padding: 10px;
+}
